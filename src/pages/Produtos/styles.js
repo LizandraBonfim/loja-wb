@@ -1,8 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
 import banner from '../../assets/banners/nerdstore.png';
-import banner1 from '../../assets/banners/Template.jpg';
-import { LoginContainer } from '../../global';
 
 export const Banner = styled.div`
 position: relative;
@@ -48,12 +46,7 @@ background-size: cover;
   
 `;
 
-export const Preco = styled(LoginContainer)`
-   box-shadow: 0px 1px 2px 0px #b9afaf;
 
- 
-
-`;
 
 const animeTop = keyframes`
   to{
@@ -75,39 +68,16 @@ export const ProdutosCard = styled.section`
     }
 
     &:hover  {
-        ${Preco} {
-            display: none;
-        }
+       
             button{
                 
-                transform: translateY(-20px);
-                animation: ${animeTop} .7s forwards;
-                display: block;
+            transform: translateY(-20px);
+            animation: ${animeTop} .7s forwards;
+            display: block;
         }
     }
 
     @media(max-width: 60rem){
         grid-template-columns: 1fr 1fr;
-    }
-`;
-
-export const ProdutoItem = styled.div`
-    border: 1px solid #eee;
-    transition: .2s;
-
-    &:hover{
-        box-shadow: 0px 0px 11px #e2dbdb;
-    }
-    
-`;
-
-
-export const DescricaoProduto = styled.div`
-    padding: .6rem;
-
-  
-
-    p{
-        color: #4c4c4c;
     }
 `;
