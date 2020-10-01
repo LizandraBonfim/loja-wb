@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import { FaStar, FaShoppingCart } from 'react-icons/fa';
 import { FcChargeBattery } from 'react-icons/fc';
 import produto from '../../assets/produtos/caneca3.jpg';
@@ -9,11 +11,13 @@ import {
     Avaliacao,
     QtdEstoque,
     Quantidade,
+    BtnAddCarrinho,
     DetalhesCompra,
     BotaoComprar
 } from './produtoDetalheEstrutura';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import Image from '../../components/Image';
 
 function ProdutoDetalhe() {
     return (
@@ -21,7 +25,7 @@ function ProdutoDetalhe() {
             <AnimeLeft>
                 <Container>
                     <section>
-                        <img src={produto} alt="Produto" />
+                        <Image src={produto} alt="Produto" />
                     </section>
 
                     <DetalhesCompra>
@@ -61,14 +65,17 @@ function ProdutoDetalhe() {
                         </Quantidade>
 
                         <BotaoComprar>
-                            <button>
+                            <BtnAddCarrinho>
                                 Adicionar ao Carrinho
                                 <FaShoppingCart />
-                            </button>
+                            </BtnAddCarrinho>
 
-                            <Button>
-                                Voltar
-                            </Button>
+                            <Link to="/">
+                                <Button>
+
+                                    Voltar
+                                </Button>
+                            </Link>
                         </BotaoComprar>
                     </DetalhesCompra>
                 </Container>

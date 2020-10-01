@@ -26,10 +26,10 @@ function Header() {
                             <span>0</span>
                         </CarrinhoIcon>
 
-                        <div>
+                        <nav>
                             <p>Bem vindo!</p>
                             <Link to="/criar-conta">Criar conta</Link> | <Link to="/login">Login</Link>
-                        </div>
+                        </nav>
                     </Carrinho>
                 </Content>
             </Container>

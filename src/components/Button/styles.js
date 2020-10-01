@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { darken } from 'polished';
 
 
 export const Content = styled.button`
@@ -11,5 +12,11 @@ export const Content = styled.button`
     border-radius: .4rem;
     cursor: pointer;
     font-size: 1rem;
+    outline: none;
+
+    &:hover, &:focus{
+        background: ${darken(0.06, '#007bff')};
+        outline: none;
+    }
     
 `;

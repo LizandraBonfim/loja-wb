@@ -8,6 +8,7 @@ import caneca2 from '../../assets/produtos/caneca2.jpg';
 import { MainContainer, AnimeLeft } from '../../global';
 import { Banner, ProdutosCard, ProdutoItem, Preco, DescricaoProduto } from './styles';
 import Button from '../../components/Button';
+import Image from '../../components/Image';
 
 function Produtos() {
 
@@ -22,7 +23,7 @@ function Produtos() {
         <section>
             <Banner>
 
-                {/* <img src={banner} alt="Banner" /> */}
+                <img src={banner} alt="Banner" />
             </Banner>
 
             <MainContainer>
@@ -34,7 +35,7 @@ function Produtos() {
 
                             <ProdutoItem>
                                 <div>
-                                    <img src={camisa1} alt="Camisa 1" />
+                                    <Image src={camisa1} alt="Camisa 1" />
                                 </div>
 
                                 <DescricaoProduto>
@@ -57,7 +58,7 @@ function Produtos() {
 
                         <ProdutoItem>
                             <div>
-                                <img src={camisa2} alt="Camisa 2" />
+                                <Image src={camisa2} alt="Camisa 2" />
                             </div>
 
                             <DescricaoProduto>
@@ -74,7 +75,7 @@ function Produtos() {
 
                         <ProdutoItem>
                             <div>
-                                <img src={caneca2} alt="caneca 1" />
+                                <Image src={caneca2} alt="caneca 1" />
                             </div>
 
                             <DescricaoProduto>
@@ -90,7 +91,7 @@ function Produtos() {
                         </ProdutoItem>
                         <ProdutoItem>
                             <div>
-                                <img src={caneca1} alt="caneca 1" />
+                                <Image src={caneca1} alt="caneca 1" />
                             </div>
 
                             <DescricaoProduto>

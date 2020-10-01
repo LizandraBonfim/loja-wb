@@ -18,13 +18,20 @@ export const Content = styled.div`
         text-align: center;
 
         div{
-            box-shadow: 0px 1px 0 0 #b9afaf;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 1rem;
             
         }
 
-        /* div{
-            margin-top:2rem;
-        } */
+        ul{
+            justify-content: center;
+        }
+
+        img{
+           
+             margin: auto;
+   
+        }
         
     }
 

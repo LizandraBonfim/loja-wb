@@ -13,5 +13,13 @@ export const CampoInput = styled.div`
         border-radius: 0.4rem;
         background-color: #eee;
         transition: .3s;
+        outline: none;
+
+    &:hover, &:focus{
+        outline: none;
+        background: white;
+        box-shadow: 0 0 2px 1px #1db0d2;
+        border-color: #007bff;
+    }
     }
 `;

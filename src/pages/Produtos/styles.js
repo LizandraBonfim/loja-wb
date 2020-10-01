@@ -1,27 +1,50 @@
 import styled, { keyframes } from 'styled-components';
+
 import banner from '../../assets/banners/nerdstore.png';
 import banner1 from '../../assets/banners/Template.jpg';
-
 import { LoginContainer } from '../../global';
 
 export const Banner = styled.div`
 position: relative;
 background-attachment: fixed;
-height: 50vh;
-background: url(${banner1}) no-repeat;
+ 
 background-size: cover;
 
 
 &::after{
     content: '';
     position: absolute;
-
+    background-size: cover;
     background: url(${banner}) no-repeat center;
     bottom: 0;
     
     width: 100%;
     height: 100%;
+
+    
 }
+
+@media(max-width: 60rem){
+        height: 20vh;
+        
+        &::after{
+            font-family: serif;
+            content: 'NerdStore Enterprise';
+            position: absolute;
+            background: none;
+            bottom: 0;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            align-items: center;
+            top: 50%;
+            font-size: 2rem;
+            }
+
+        }
   
 `;
 
@@ -52,7 +75,6 @@ export const ProdutosCard = styled.section`
     }
 
     &:hover  {
-
         ${Preco} {
             display: none;
         }
@@ -63,10 +85,19 @@ export const ProdutosCard = styled.section`
                 display: block;
         }
     }
+
+    @media(max-width: 60rem){
+        grid-template-columns: 1fr 1fr;
+    }
 `;
 
 export const ProdutoItem = styled.div`
     border: 1px solid #eee;
+    transition: .2s;
+
+    &:hover{
+        box-shadow: 0px 0px 11px #e2dbdb;
+    }
     
 `;
 

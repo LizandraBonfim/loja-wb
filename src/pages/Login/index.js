@@ -39,7 +39,7 @@ function Login() {
 
                     <LoginContainer>
                         <p>Não possui cadastro?
-                    <Link to="/login" >Criar uma conta </Link>
+                            <Link to="/criar-conta" >Criar uma conta </Link>
                         </p>
 
                     </LoginContainer>
