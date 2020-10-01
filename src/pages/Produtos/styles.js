@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 import banner from '../../assets/banners/nerdstore.png';
 
@@ -48,34 +48,12 @@ background-size: cover;
 
 
 
-const animeTop = keyframes`
-  to{
-    opacity: 1;
-    transform: initial;
-  }
-`
-
-
 export const ProdutosCard = styled.section`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 
-    button{
-        display: none;
-        margin-top: 0;
-        padding: 1rem;
-    }
-
-    &:hover  {
-       
-            button{
-                
-            transform: translateY(-20px);
-            animation: ${animeTop} .7s forwards;
-            display: block;
-        }
-    }
+   
 
     @media(max-width: 60rem){
         grid-template-columns: 1fr 1fr;
