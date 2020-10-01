@@ -52,6 +52,26 @@ export const Institucional = styled.div`
                 margin-left: .5rem;
             }
 
+            &:hover{
+
+                &:nth-child(1){
+                    color: #f008bd;
+                }
+
+                &:nth-child(2){
+                    color: rgb(7, 79, 212);
+                }
+
+                &:nth-child(3){
+                    color: red;
+                }
+
+                &:nth-child(4){
+                    color: #0a95b8;
+                }
+            }
+           
+
            
         }
     }

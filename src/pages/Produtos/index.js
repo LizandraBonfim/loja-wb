@@ -10,12 +10,19 @@ import { Banner, ProdutosCard, ProdutoItem, Preco, DescricaoProduto } from './st
 import Button from '../../components/Button';
 
 function Produtos() {
+
+    const [mouseDown, setMouseDown] = React.useState(false);
+
+    React.useEffect(() => {
+
+    });
+
     return (
 
         <section>
             <Banner>
 
-                <img src={banner} alt="Banner" />
+                {/* <img src={banner} alt="Banner" /> */}
             </Banner>
 
             <MainContainer>
@@ -23,7 +30,7 @@ function Produtos() {
 
                     <ProdutosCard>
 
-                        <a href="/">
+                        <a href="/produto/camisa1">
 
                             <ProdutoItem>
                                 <div>
@@ -40,11 +47,11 @@ function Produtos() {
 
                                 </Preco>
 
+                                <Button>
+                                    Comprar
+                                </Button>
                             </ProdutoItem>
 
-                            <Button>
-                                Comprar
-                            </Button>
                         </a>
 
 

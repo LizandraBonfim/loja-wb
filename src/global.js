@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     
   }
 
-  p, ul, li, h3{
+  p, ul, li, h3, h1, h5{
     margin: 0;
     padding: 0;
   }
